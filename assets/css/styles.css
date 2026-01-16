@@ -319,7 +319,7 @@ input, textarea, select {
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(26, 54, 93, 0.92) 0%, rgba(15, 36, 64, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.92) 0%, rgba(14, 116, 144, 0.85) 100%);
 }
 
 .hero__content {
@@ -684,7 +684,7 @@ input, textarea, select {
 .project__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(26, 54, 93, 0.95) 0%, transparent 100%);
+    background: linear-gradient(to top, rgba(8, 145, 178, 0.95) 0%, transparent 100%);
     display: flex;
     align-items: flex-end;
     padding: 2rem;
@@ -784,7 +784,7 @@ input, textarea, select {
 .cta__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(26, 54, 93, 0.95) 0%, rgba(15, 36, 64, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.95) 0%, rgba(14, 116, 144, 0.9) 100%);
 }
 
 .cta__content {
