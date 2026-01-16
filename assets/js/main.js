@@ -45,8 +45,11 @@ document.addEventListener('DOMContentLoaded', function() {
     /* ========================================
        HEADER SCROLL EFFECT
        ======================================== */
+    // Check if we're on a project page (needs header always visible)
+    const isProjectPage = document.querySelector('.proyecto-hero') !== null;
+
     function handleScroll() {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 100 || isProjectPage) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
