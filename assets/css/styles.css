@@ -319,7 +319,7 @@ input, textarea, select {
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(135, 206, 235, 0.92) 0%, rgba(94, 181, 214, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(70, 150, 180, 0.95) 0%, rgba(50, 120, 150, 0.92) 100%);
 }
 
 .hero__content {
