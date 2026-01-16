@@ -833,7 +833,7 @@ input, textarea, select {
 }
 
 .contact__info-text {
-    color: var(--color-gray-300);
+    color: var(--color-white);
     margin-bottom: 2rem;
 }
 
@@ -874,7 +874,7 @@ input, textarea, select {
 
 .contact__text p {
     font-size: 0.9375rem;
-    color: var(--color-gray-300);
+    color: var(--color-white);
 }
 
 .contact__social {
