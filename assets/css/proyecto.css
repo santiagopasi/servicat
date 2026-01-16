@@ -25,7 +25,7 @@
 .proyecto-hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(8, 145, 178, 0.95) 0%, rgba(8, 145, 178, 0.3) 50%, transparent 100%);
+    background: linear-gradient(to top, rgba(135, 206, 235, 0.95) 0%, rgba(135, 206, 235, 0.3) 50%, transparent 100%);
 }
 
 .proyecto-hero__content {

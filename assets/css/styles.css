@@ -5,9 +5,9 @@
 /* Variables */
 :root {
     /* Colors */
-    --color-primary: #0891b2;
-    --color-primary-light: #22d3ee;
-    --color-primary-dark: #0e7490;
+    --color-primary: #87CEEB;
+    --color-primary-light: #a8dcf0;
+    --color-primary-dark: #5eb5d6;
     --color-secondary: #c9a227;
     --color-secondary-light: #d4b445;
     --color-accent: #e8b923;
@@ -319,7 +319,7 @@ input, textarea, select {
 .hero__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(8, 145, 178, 0.92) 0%, rgba(14, 116, 144, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.92) 0%, rgba(94, 181, 214, 0.85) 100%);
 }
 
 .hero__content {
@@ -684,7 +684,7 @@ input, textarea, select {
 .project__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(8, 145, 178, 0.95) 0%, transparent 100%);
+    background: linear-gradient(to top, rgba(135, 206, 235, 0.95) 0%, transparent 100%);
     display: flex;
     align-items: flex-end;
     padding: 2rem;
@@ -784,7 +784,7 @@ input, textarea, select {
 .cta__overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(8, 145, 178, 0.95) 0%, rgba(14, 116, 144, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.95) 0%, rgba(94, 181, 214, 0.9) 100%);
 }
 
 .cta__content {
