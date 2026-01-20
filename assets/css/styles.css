@@ -224,6 +224,16 @@ input, textarea, select {
     z-index: 100;
 }
 
+.nav__logo-img {
+    height: 160px;
+    width: auto;
+    transition: var(--transition);
+}
+
+.header.scrolled .nav__logo-img {
+    height: 120px;
+}
+
 .logo-text {
     font-family: var(--font-secondary);
     font-size: 1.75rem;
@@ -277,6 +287,7 @@ input, textarea, select {
     background-color: var(--color-secondary);
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
+    color: var(--color-white) !important;
 }
 
 .nav__link--cta::after {
@@ -592,7 +603,7 @@ input, textarea, select {
 
 .service__icon i {
     font-size: 1.75rem;
-    color: var(--color-secondary);
+    color: var(--color-white);
 }
 
 .service__title {
@@ -863,7 +874,7 @@ input, textarea, select {
 
 .contact__icon i {
     font-size: 1.25rem;
-    color: var(--color-secondary);
+    color: var(--color-white);
 }
 
 .contact__text h4 {
@@ -969,6 +980,12 @@ input, textarea, select {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
+}
+
+.footer__logo-img {
+    height: 200px;
+    width: auto;
+    filter: brightness(0) invert(1);
 }
 
 .footer__logo .logo-text {
