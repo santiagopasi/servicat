@@ -100,7 +100,10 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const targetId = this.getAttribute('href');
 
-            if (targetId === '#') return;
+            if (targetId === '#') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                return;
+            }
 
             const targetElement = document.querySelector(targetId);
 
