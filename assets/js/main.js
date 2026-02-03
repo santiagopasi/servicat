@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectCards = document.querySelectorAll('.project__card');
     const statNumbers = document.querySelectorAll('.stat__number');
     const contactForm = document.getElementById('contact-form');
+    const searchInput = document.getElementById('project-search');
+    const searchClear = document.getElementById('search-clear');
 
     /* ========================================
        MOBILE NAVIGATION
@@ -176,8 +178,59 @@ document.addEventListener('DOMContentLoaded', function() {
                     card.classList.add('hidden');
                 }
             });
+
+            // Clear search when changing filter
+            if (searchInput) {
+                searchInput.value = '';
+                if (searchClear) searchClear.style.display = 'none';
+            }
         });
     });
+
+    /* ========================================
+       PROJECT SEARCH
+       ======================================== */
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+
+            // Show/hide clear button
+            if (searchClear) {
+                searchClear.style.display = query ? 'block' : 'none';
+            }
+
+            // Reset category filter to "Todos" when searching
+            if (query) {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                const allBtn = document.querySelector('.filter__btn[data-filter="all"]');
+                if (allBtn) allBtn.classList.add('active');
+            }
+
+            projectCards.forEach(card => {
+                const title = card.querySelector('.project__title');
+                const name = title ? title.textContent.toLowerCase() : '';
+
+                if (!query || name.includes(query)) {
+                    card.classList.remove('hidden');
+                    card.style.animation = 'fadeIn 0.5s ease forwards';
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    }
+
+    if (searchClear) {
+        searchClear.addEventListener('click', function() {
+            searchInput.value = '';
+            this.style.display = 'none';
+            // Show all cards
+            projectCards.forEach(card => {
+                card.classList.remove('hidden');
+                card.style.animation = 'fadeIn 0.5s ease forwards';
+            });
+        });
+    }
 
     /* ========================================
        CONTACT FORM

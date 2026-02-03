@@ -329,6 +329,14 @@
                 <h2 class="section__title">Proyectos que nos enorgullecen</h2>
             </div>
 
+            <div class="projects__search">
+                <div class="search__input-wrapper">
+                    <i class="fas fa-search search__icon"></i>
+                    <input type="text" id="project-search" class="search__input" placeholder="Buscar proyecto por nombre...">
+                    <button class="search__clear" id="search-clear" style="display:none;"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+
             <div class="projects__filters">
                 <button class="filter__btn active" data-filter="all">Todos</button>
                 <button class="filter__btn" data-filter="emprendimientos">Emprendimientos</button>
@@ -479,44 +487,14 @@
 
                 <div class="project__card" data-category="agua">
                     <div class="project__img-wrapper">
-                        <img src="assets/img/proyectos/helper-agua.jpg" alt="Colectora Cloacal San Isidro" class="project__img">
+                        <img src="assets/img/proyectos/tendido-caneria-chacarita/Tendido.png" alt="Tendido de Cañería de Alta Presión" class="project__img">
                         <div class="project__overlay">
                             <div class="project__info">
                                 <span class="project__category">Obras de Agua</span>
-                                <h3 class="project__title">Colectora Cloacal 160mm</h3>
-                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> San Isidro, Buenos Aires</p>
-                                <p class="project__desc">Instalación de cañerías para colectora cloacal de 160 mm. Volumen: 1000 mts.</p>
-                                <a href="proyectos/colectora-cloacal-sanisidro.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project__card" data-category="agua">
-                    <div class="project__img-wrapper">
-                        <img src="assets/img/proyectos/helper-agua.jpg" alt="Expansión Red de Agua" class="project__img">
-                        <div class="project__overlay">
-                            <div class="project__info">
-                                <span class="project__category">Obras de Agua</span>
-                                <h3 class="project__title">Expansión de Red de Agua</h3>
-                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Villa Ballester y Villa Zagala</p>
-                                <p class="project__desc">Cañerías maestras y distribuidoras de 90 y 315 mm con ~480 conexiones. Volumen: 4800 mts.</p>
-                                <a href="proyectos/expansion-red-agua.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project__card" data-category="agua">
-                    <div class="project__img-wrapper">
-                        <img src="assets/img/proyectos/helper-agua.jpg" alt="Red de Agua Lanús" class="project__img">
-                        <div class="project__overlay">
-                            <div class="project__info">
-                                <span class="project__category">Obras de Agua</span>
-                                <h3 class="project__title">Expansión Red de Agua Lanús</h3>
-                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Villa Diamante, Lanús</p>
-                                <p class="project__desc">Cañería de 90 mm con conexiones cortas y largas domiciliarias.</p>
-                                <a href="proyectos/red-agua-lanus.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                                <h3 class="project__title">Tendido de Cañería de Alta Presión</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Playón de Chacarita, CABA</p>
+                                <p class="project__desc">Tendido de cañería de alta presión. Comitente: Instituto de Vivienda de la Ciudad Autónoma de Buenos Aires.</p>
+                                <a href="proyectos/tendido-caneria-chacarita.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -563,36 +541,6 @@
                                 <p class="project__location"><i class="fas fa-map-marker-alt"></i> Zona Norte, Buenos Aires</p>
                                 <p class="project__desc">Recambio y instalación de medidores monofásicos y trifásicos en General Pacheco, Escobar, San Fernando, Olivos y Maschwitz.</p>
                                 <a href="proyectos/medidores.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project__card" data-category="electricidad">
-                    <div class="project__img-wrapper">
-                        <img src="assets/img/proyectos/helper-agua.jpg" alt="Montaje Integral" class="project__img">
-                        <div class="project__overlay">
-                            <div class="project__info">
-                                <span class="project__category">Obras de Electricidad</span>
-                                <h3 class="project__title">Montaje y Conexionado Integral</h3>
-                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Barrio Gral. Rosas, Avellaneda</p>
-                                <p class="project__desc">Montaje de línea con 250 postes, 52 transformadores monofásicos y 1150 conexiones de clientes.</p>
-                                <a href="proyectos/montaje-integral.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project__card" data-category="electricidad">
-                    <div class="project__img-wrapper">
-                        <img src="assets/img/proyectos/helper-agua.jpg" alt="Alumbrado Público" class="project__img">
-                        <div class="project__overlay">
-                            <div class="project__info">
-                                <span class="project__category">Obras de Electricidad</span>
-                                <h3 class="project__title">Alumbrado Público</h3>
-                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Rafael Castillo, La Matanza</p>
-                                <p class="project__desc">Instalaciones de alumbrado público, recambio y colocación de 120 columnas de luminarias.</p>
-                                <a href="proyectos/alumbrado-publico.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -669,6 +617,21 @@
                                 <p class="project__location"><i class="fas fa-map-marker-alt"></i> La Plata, Buenos Aires</p>
                                 <p class="project__desc">Ejecución de 3200 metros de gasoducto. Comitente: Camuzzi Gas.</p>
                                 <a href="proyectos/gasoducto-laplata.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="gas">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/proyectos/planta-reguladora-escuela/gas.png" alt="Planta Reguladora Escuela Infantil" class="project__img">
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Obras de Gas</span>
+                                <h3 class="project__title">Planta Reguladora Escuela Infantil</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Barrio Piedrabuena, CABA</p>
+                                <p class="project__desc">Planta reguladora para Escuela Infantil. Comitente: Ministerio de Educación de la Ciudad de Buenos Aires.</p>
+                                <a href="proyectos/planta-reguladora-escuela.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -760,6 +723,171 @@
                                 <p class="project__location"><i class="fas fa-map-marker-alt"></i> Parque Patricios, CABA</p>
                                 <p class="project__desc">Puesta en valor de la escuela. Comitente: Dirección General de Espacio y Ambiente Público.</p>
                                 <a href="proyectos/escuela-suecia.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="arquitectura">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/proyectos/ecoparque-puente-garzas.jpeg" alt="Ecoparque - Puente de las Garzas" class="project__img">
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Arquitectura y Restauración</span>
+                                <h3 class="project__title">Ecoparque - Puente de las Garzas</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Ecoparque, CABA</p>
+                                <p class="project__desc">Construcción del Puente de las Garzas en el Ecoparque. Comitente: Gobierno de la Ciudad de Buenos Aires.</p>
+                                <a href="proyectos/ecoparque-puente-garzas.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="arquitectura">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/proyectos/fachadas-piedrabuena.png" alt="Fachadas Barrio Piedrabuena" class="project__img">
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Arquitectura y Restauración</span>
+                                <h3 class="project__title">Fachadas Barrio Piedrabuena</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Barrio Rivadavia 2, CABA</p>
+                                <p class="project__desc">Reparación de fachadas del Barrio Piedrabuena. Comitente: Instituto de Vivienda de la Ciudad.</p>
+                                <a href="proyectos/fachadas-piedrabuena.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="arquitectura">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/proyectos/fiscalias-boulogne.jpeg" alt="Fiscalía de Boulogne" class="project__img">
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Arquitectura y Restauración</span>
+                                <h3 class="project__title">Reparaciones en Fiscalía de Boulogne</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Av. Avelino Rolón 1030, San Isidro</p>
+                                <p class="project__desc">Reparaciones integrales en la Fiscalía de Boulogne. Comitente: Municipalidad de San Isidro.</p>
+                                <a href="proyectos/fiscalias-boulogne.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="arquitectura">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/proyectos/hospital-boulogne.jpeg" alt="Hospital Municipal Materno Infantil" class="project__img">
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Arquitectura y Restauración</span>
+                                <h3 class="project__title">Hospital Municipal Materno Infantil de Boulogne</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Diego Palma 505, San Isidro</p>
+                                <p class="project__desc">Reparaciones integrales en el Hospital Materno Infantil. Comitente: Municipalidad de San Isidro.</p>
+                                <a href="proyectos/hospital-boulogne.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="arquitectura">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/proyectos/banos-reserva-ecologica.jpeg" alt="Baños Reserva Ecológica" class="project__img">
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Arquitectura y Restauración</span>
+                                <h3 class="project__title">Baños - Reserva Ecológica Costanera Sur</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Av. Int. Hernán Giralt 1, CABA</p>
+                                <p class="project__desc">Construcción de baños públicos en la Reserva Ecológica. Comitente: Gobierno de la Ciudad de Buenos Aires.</p>
+                                <a href="proyectos/banos-reserva-ecologica.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="arquitectura">
+                    <div class="project__img-wrapper">
+                        <img src="assets/img/proyectos/recinto-elefantes.jpeg" alt="Recinto de Elefantes" class="project__img">
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Arquitectura y Restauración</span>
+                                <h3 class="project__title">Ecoparque - Recinto de Elefantes</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Ecoparque, CABA</p>
+                                <p class="project__desc">Construcción del Recinto de Elefantes en el Ecoparque. Comitente: Gobierno de la Ciudad de Buenos Aires.</p>
+                                <a href="proyectos/recinto-elefantes.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="agua">
+                    <div class="project__img-wrapper">
+                        <canvas data-thumbnail="colectora-cloacal" class="project__img" style="width:100%;height:100%;"></canvas>
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Obras de Agua</span>
+                                <h3 class="project__title">Colectora Cloacal 160mm</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> San Isidro, Buenos Aires</p>
+                                <p class="project__desc">Instalación de cañerías para colectora cloacal de 160 mm. Volumen: 1000 mts.</p>
+                                <a href="proyectos/colectora-cloacal-sanisidro.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="agua">
+                    <div class="project__img-wrapper">
+                        <canvas data-thumbnail="expansion-red-agua" class="project__img" style="width:100%;height:100%;"></canvas>
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Obras de Agua</span>
+                                <h3 class="project__title">Expansión de Red de Agua</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Villa Ballester y Villa Zagala</p>
+                                <p class="project__desc">Cañerías maestras y distribuidoras de 90 y 315 mm con ~480 conexiones. Volumen: 4800 mts.</p>
+                                <a href="proyectos/expansion-red-agua.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="agua">
+                    <div class="project__img-wrapper">
+                        <canvas data-thumbnail="red-agua-lanus" class="project__img" style="width:100%;height:100%;"></canvas>
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Obras de Agua</span>
+                                <h3 class="project__title">Expansión Red de Agua Lanús</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Villa Diamante, Lanús</p>
+                                <p class="project__desc">Cañería de 90 mm con conexiones cortas y largas domiciliarias.</p>
+                                <a href="proyectos/red-agua-lanus.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="electricidad">
+                    <div class="project__img-wrapper">
+                        <canvas data-thumbnail="montaje-integral" class="project__img" style="width:100%;height:100%;"></canvas>
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Obras de Electricidad</span>
+                                <h3 class="project__title">Montaje y Conexionado Integral</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Barrio Gral. Rosas, Avellaneda</p>
+                                <p class="project__desc">Montaje de línea con 250 postes, 52 transformadores monofásicos y 1150 conexiones de clientes.</p>
+                                <a href="proyectos/montaje-integral.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__card" data-category="electricidad">
+                    <div class="project__img-wrapper">
+                        <canvas data-thumbnail="alumbrado-publico" class="project__img" style="width:100%;height:100%;"></canvas>
+                        <div class="project__overlay">
+                            <div class="project__info">
+                                <span class="project__category">Obras de Electricidad</span>
+                                <h3 class="project__title">Alumbrado Público</h3>
+                                <p class="project__location"><i class="fas fa-map-marker-alt"></i> Rafael Castillo, La Matanza</p>
+                                <p class="project__desc">Instalaciones de alumbrado público, recambio y colocación de 120 columnas de luminarias.</p>
+                                <a href="proyectos/alumbrado-publico.html" class="project__link">Ver proyecto <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -933,5 +1061,6 @@
     </a>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/thumbnails.js"></script>
 </body>
 </html>

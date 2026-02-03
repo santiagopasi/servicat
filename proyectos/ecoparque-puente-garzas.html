@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoparque - Puente de las Garzas - Servicat</title>
+    <meta name="description" content="Construccion del Puente de las Garzas en el Ecoparque de Buenos Aires.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/proyecto.css">
+</head>
+<body>
+    <header class="header scrolled" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">
+                <span class="logo-text">SERVICAT</span>
+                <span class="logo-subtitle">Constructora & Arquitectura</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html#inicio" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="../index.html#nosotros" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="../index.html#servicios" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="../index.html#obras" class="nav__link">Obras</a></li>
+                    <li class="nav__item"><a href="../index.html#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <section class="proyecto-hero">
+        <div class="proyecto-hero__img">
+            <img src="../assets/img/proyectos/ecoparque-puente-garzas.jpeg" alt="Ecoparque - Puente de las Garzas">
+        </div>
+        <div class="proyecto-hero__overlay"></div>
+        <div class="proyecto-hero__content container">
+            <span class="proyecto-hero__category">Arquitectura y Restauracion</span>
+            <h1 class="proyecto-hero__title">Ecoparque - Puente de las Garzas</h1>
+            <p class="proyecto-hero__location"><i class="fas fa-map-marker-alt"></i> Ecoparque, CABA</p>
+        </div>
+    </section>
+
+    <section class="proyecto-content section">
+        <div class="container">
+            <div class="proyecto-grid">
+                <div class="proyecto-main">
+                    <h2>Descripcion del Proyecto</h2>
+                    <p>Construccion del Puente de las Garzas en el Ecoparque de la Ciudad de Buenos Aires. Obra realizada para el Gobierno de la Ciudad de Buenos Aires.</p>
+                    <h3>Caracteristicas</h3>
+                    <ul class="proyecto-features">
+                        <li><i class="fas fa-check"></i> Puente de las Garzas</li>
+                        <li><i class="fas fa-check"></i> Ecoparque CABA</li>
+                        <li><i class="fas fa-check"></i> Obra publica</li>
+                    </ul>
+                </div>
+                <div class="proyecto-sidebar">
+                    <div class="proyecto-info-card">
+                        <h4>Informacion del Proyecto</h4>
+                        <ul>
+                            <li><strong>Categoria:</strong> Arquitectura y Restauracion</li>
+                            <li><strong>Ubicacion:</strong> Ecoparque, CABA</li>
+                            <li><strong>Comitente:</strong> Gobierno de la Ciudad de Buenos Aires</li>
+                            <li><strong>Ano:</strong> 2024</li>
+                        </ul>
+                    </div>
+                    <a href="../index.html#contacto" class="btn btn--primary btn--full">Consultar por este proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de imagenes -->
+    <section class="proyecto-galeria">
+        <div class="container">
+            <h2>Galeria del Proyecto</h2>
+            <div class="galeria-grid">
+                <div class="galeria-grid__item" onclick="openLightbox(0)">
+                    <img src="../assets/img/proyectos/ecoparque-puente-garzas/portada.jpeg" alt="Puente de las Garzas - Portada" loading="lazy">
+                </div>
+                <div class="galeria-grid__item" onclick="openLightbox(1)">
+                    <img src="../assets/img/proyectos/ecoparque-puente-garzas/img-1.jpeg" alt="Puente de las Garzas - Imagen 1" loading="lazy">
+                </div>
+                <div class="galeria-grid__item" onclick="openLightbox(2)">
+                    <img src="../assets/img/proyectos/ecoparque-puente-garzas/img-2.jpeg" alt="Puente de las Garzas - Imagen 2" loading="lazy">
+                </div>
+                <div class="galeria-grid__item" onclick="openLightbox(3)">
+                    <img src="../assets/img/proyectos/ecoparque-puente-garzas/img-3.jpeg" alt="Puente de las Garzas - Imagen 3" loading="lazy">
+                </div>
+                <div class="galeria-grid__item" onclick="openLightbox(4)">
+                    <img src="../assets/img/proyectos/ecoparque-puente-garzas/img-4.jpeg" alt="Puente de las Garzas - Imagen 4" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+        <button class="lightbox__nav lightbox__prev" onclick="navigateLightbox(-1)"><i class="fas fa-chevron-left"></i></button>
+        <img class="lightbox__img" id="lightbox-img" src="" alt="">
+        <button class="lightbox__nav lightbox__next" onclick="navigateLightbox(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <section class="proyecto-back">
+        <div class="container">
+            <a href="../index.html#obras" class="btn btn--outline-dark"><i class="fas fa-arrow-left"></i> Volver a Obras</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom" style="border:none; padding-top:0;">
+                <p>&copy; 2026 Servicat. Todos los derechos reservados.</p>
+                <p class="footer__credit">Diseno web por <a href="https://sinfin3d.art" target="_blank" rel="noopener">SINFIN</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        const galeriaImages = [
+            '../assets/img/proyectos/ecoparque-puente-garzas/portada.jpeg',
+            '../assets/img/proyectos/ecoparque-puente-garzas/img-1.jpeg',
+            '../assets/img/proyectos/ecoparque-puente-garzas/img-2.jpeg',
+            '../assets/img/proyectos/ecoparque-puente-garzas/img-3.jpeg',
+            '../assets/img/proyectos/ecoparque-puente-garzas/img-4.jpeg'
+        ];
+        let currentIndex = 0;
+
+        function openLightbox(index) {
+            currentIndex = index;
+            document.getElementById('lightbox-img').src = galeriaImages[currentIndex];
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function navigateLightbox(direction) {
+            currentIndex = (currentIndex + direction + galeriaImages.length) % galeriaImages.length;
+            document.getElementById('lightbox-img').src = galeriaImages[currentIndex];
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) closeLightbox();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (!document.getElementById('lightbox').classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') navigateLightbox(-1);
+            if (e.key === 'ArrowRight') navigateLightbox(1);
+        });
+    </script>
+</body>
+</html>
