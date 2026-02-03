@@ -58,14 +58,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Show/hide scroll to top button
-        if (window.scrollY > 500) {
-            scrollTop.classList.add('show');
-        } else {
-            scrollTop.classList.remove('show');
+        if (scrollTop) {
+            if (window.scrollY > 500) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
         }
     }
 
     window.addEventListener('scroll', handleScroll);
+
+    // Scroll to top button click
+    if (scrollTop) {
+        scrollTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 
     /* ========================================
        ACTIVE NAV LINK ON SCROLL
